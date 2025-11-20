@@ -94,10 +94,11 @@ But I guess good for you";
         body {background-image: url("BLK.jpg")}
         .Title {font-family: Arial; text-align: justify; color: white; max-width: 500px; margin: 20px auto;}
         .Song {font-family: Arial; text-align: justify; color:rgb(177, 91, 231); max-width: 500px; margin: 20px auto;}
-
+        .Container {background: #A9A9A9; max-width: 600px; margin: 40px auto; padding: 25px 30px; border-radius: 13px; }
     </style>
 </head>
 <body>
+    <div class = "Container">
     <!-- Title Block -->
     <?= "<div class = 'Title'>"; ?>
     <h1> Song Title: <?php echo $songTitle ?> </h1>
@@ -121,6 +122,7 @@ But I guess good for you";
     <P>Chorus</P>
     <p><?= $sections[5] ?></p>
     <?= "</div>";?>
+    </div>
 
 
 </body>
